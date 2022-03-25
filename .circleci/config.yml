@@ -29,7 +29,7 @@ jobs:
       - run:
           name: hello
           command: echo hello
-      depoly:
+      deploy:
         docker:
           -image: cimg/ruby:3.1.0
         steps:
