@@ -29,10 +29,10 @@ jobs:
       - run:
           name: hello
           command: echo hello
-      deploy:
-        docker:
-          -image: cimg/ruby:3.1.0
-        steps:
-          -run:
-              name: world
-              command: echo world
+  deploy:
+    docker:
+      -image: cimg/ruby:3.1.0
+    steps:
+      -run:
+          name: world
+          command: echo world
