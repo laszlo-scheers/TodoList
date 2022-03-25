@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @notodo %>
+
+<div>
+  <%= link_to "Edit this notodo", edit_notodo_path(@notodo) %> |
+  <%= link_to "Back to notodos", notodos_path %>
+
+  <%= button_to "Destroy this notodo", @notodo, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+class Notodo < ApplicationRecord
+end
