@@ -12,7 +12,7 @@ fi
 sudo docker pull $IMAGE_NAME
 
 # Check if a docker container exists with the name of $CONTAINER_NAME if it does remove the container
-CONTAINER_EXISTS=$(sudo docker ps -a | greo $CONTAINER_NAME)
+CONTAINER_EXISTS=$(sudo docker ps -a | grep $CONTAINER_NAME)
 if [ "$CONTAINER_EXISTS" ]
 then
     sudo docker rm $CONTAINER_NAME
